@@ -1,7 +1,6 @@
-#!name = IPPure 節點純淨度
-#!desc = 從節點選單查詢出口 IP、IPPure 風險分數及網絡資料。
+#!name = IPPure
 #!homepage = https://github.com/Vianssr/Loon-pure
 #!loon_version = 3.5.1(983)
 
 [Script]
-generic then script("https://raw.githubusercontent.com/Vianssr/Loon-pure/main/Scripts/ippure.js") with tag="檢測 IP 純淨度", img_url="magnifyingglass.system", timeout=20
+generic then script("https://raw.githubusercontent.com/Vianssr/Loon-pure/main/Scripts/ippure.js") with tag="IPPure", img_url="magnifyingglass.system", timeout=20

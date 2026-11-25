@@ -1,13 +1,13 @@
 # IPPure 節點純淨度
 
-在 Loon 的節點清單長按或右鍵點選節點，選擇「檢測 IP 純淨度」。查詢會經過該節點，結果會顯示 IPPure 實際看到的出口 IP、風險分數，以及可取得的位置、ASN 和網絡類型。
+在 Loon 的節點清單長按或右鍵點選節點，選擇「IPPure」。查詢會經過該節點，結果會顯示 IPPure 實際看到的出口 IP、風險分數，以及可取得的位置、ASN 和網絡類型。
 
 ## 從網址匯入
 
 適用於 Loon 3.5.1（Build 983）或更新版本。
 
 1. 在 Loon 的「插件」頁按「＋」，將下方網址貼入網址欄，儲存並啟用插件。
-2. 確認腳本功能及 Loon 連線已開啟，在節點清單長按或右鍵點選節點，選擇「檢測 IP 純淨度」。
+2. 確認腳本功能及 Loon 連線已開啟，在節點清單長按或右鍵點選節點，選擇「IPPure」。
 
 ```text
 https://raw.githubusercontent.com/Vianssr/Loon-pure/main/IPPure.plugin
@@ -18,7 +18,13 @@ https://raw.githubusercontent.com/Vianssr/Loon-pure/main/IPPure.plugin
 1. 將 [IPPure.plugin](Plugins/IPPure.plugin) 複製到「iCloud 雲碟 → Loon → Plugins」。
 2. 將 [ippure.js](Scripts/ippure.js) 複製到「iCloud 雲碟 → Loon → Scripts」。
 3. 在 Loon 的「插件」頁按「＋」，於網址欄輸入完整檔名 `IPPure.plugin`，儲存並啟用。確認 Loon 的腳本功能已開啟。
-4. 開啟 Loon 連線，在節點清單長按或右鍵點選要測試的節點，選擇「檢測 IP 純淨度」。
+4. 開啟 Loon 連線，在節點清單長按或右鍵點選要測試的節點，選擇「IPPure」。
+
+## 顯示語言
+
+執行檢測時，插件會依照 Loon 腳本環境的語言顯示結果與錯誤提示，支援繁體中文、简体中文、English 和 Русский。無法辨識語言時使用英文。語言來自本機，切換出口節點不會影響顯示語言。
+
+Loon 的 App 語言若與腳本環境回報的語言不同，結果會採用腳本環境的語言。節點選單名稱統一為「IPPure」，因為 Loon 的腳本標籤只支援固定文字。[Loon 腳本設定文件](https://nsloon.app/en/docs/Script/script_v2/)
 
 ## 如何看分數
 
